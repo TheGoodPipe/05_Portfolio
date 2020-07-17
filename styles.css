@@ -1,6 +1,6 @@
 /* GENERAL STYLES */
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -9,17 +9,20 @@
     --color-bluelife: #095bff;
     --color-lightblue: #1fbcff;
     --color-aqua: #50e5ed;
-    --color-darkgray: rgba(72, 74, 74, 1);
-    --color-lightgray: rgb(248, 248, 248);
+    --color-darkgray: rgb(74, 74, 74);
+    --color-lightgray: rgb(244, 244, 244);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(2, 2, 2);
 }
 
 
 body {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--color-white);
+    color: var(--color-black);
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: 0px;
+    padding: 0px;
     line-height: 1.6em;
 }
 
@@ -38,20 +41,24 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* NAV STYLES */
 
 #navbar {
-    /* background-color: #111; */
-    color: #fff;
+    color: var(--color-white);
     top: 0;
     width: 100%;
     min-height: 3.6em;
     position: fixed;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 9999;
 }
 
 .navdark {
@@ -59,24 +66,23 @@ a {
     width: 100%;
     min-height: 3.6em;
     opacity: 0;
-    background: #000;
-    /* background: linear-gradient(90deg, rgba(4, 4, 4, 1), rgba(35, 40, 48, 1), rgba(4, 4, 4, 1)); */
+    background: var(--color-black);
     z-index: 90;
 }
 
 #nav-left {
-    z-index: 95;
+    z-index: 100;
     margin-left: 3em;
 }
 
 .logo-small {
-    color: #fff;
     font-family: 'Girassol', sans-serif;
     font-size: 1.5em;
+    color: var(--color-white);
 }
 
 #nav-right {
-    z-index: 97;
+    z-index: 101;
     margin-right: 1em;
 }
 
@@ -93,12 +99,6 @@ a {
 }
 
 #nav-right a:hover {
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--color-bluelife);
-}
-
-#nav-right a:active {
     font-weight: 600;
     color: var(--color-bluelife);
 }
@@ -107,11 +107,12 @@ a {
 
 #welcome-section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: flex-end;
     align-content: center;
     width: 100%;
     height: 100vh;
+    color: var(--color-white);
     background: linear-gradient(25deg, rgba(30, 27, 58, 0.7), rgba(0, 0, 0, 0.8), rgba(30, 27, 58, 0.7)), url(https://github.com/TheGoodPipe/05_Portfolio/blob/master/Media/Header-Img.jpg?raw=true);
     background-position: center;
     background-size: cover;
@@ -129,32 +130,39 @@ a {
 }
 
 .logo-big {
-    /* background-color: var(--color-lightblue); */
     color: white;
     font-family: 'Girassol', sans-serif;
     font-size: 3.6em;
     font-weight: 500;
     line-height: 1.1em;
-    margin: 0;
+    margin: 0 1rem;
 }
 
 .logo-sub {
     color: var(--color-lightgray);
-    margin: 5px 0;
+    margin: .2rem 1rem;
     font-size: 1.15em;
     font-weight: 300;
 }
 
 /* TRIANGLE ANIMATION */
 
+.triangle-link {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: flex-end;
+    height: 50vh;
+    margin: 0 1rem;
+}
+
 .triangle-wrapper {
     position: relative;
-    top: 16rem;
     width: 60px;
     height: 45px;
-    margin: 0 auto;
-    color: #fff;
-    -webkit-text-stroke: 0.2em #000;
+    margin: 0 auto 3rem auto;
+    color: var(--color-white);
+    -webkit-text-stroke: 0.2em var(--color-black);
     text-decoration: none;
     transition: all .3s ease-out;
 }
