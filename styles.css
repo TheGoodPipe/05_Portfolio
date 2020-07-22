@@ -10,7 +10,7 @@
     --color-lightblue: #1fbcff;
     --color-aqua: #50e5ed;
     --color-darkgray: rgb(74, 74, 74);
-    --color-lightgray: rgb(244, 244, 244);
+    --color-lightgray: rgb(235, 236, 244);
     --color-white: rgb(255, 255, 255);
     --color-black: rgb(2, 2, 2);
 }
@@ -20,20 +20,26 @@ body {
     background-color: var(--color-white);
     color: var(--color-black);
     font-family: 'Raleway', sans-serif;
-    text-align: center;
     margin: 0px;
     padding: 0px;
     line-height: 1.6em;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+    color: var(--color-lightgray);
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 p {
-    font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.4rem;
 }
 
 a {
@@ -43,7 +49,33 @@ a {
 
 a:hover {
     cursor: pointer;
-    text-decoration: underline;
+}
+
+/* BUTTONS */
+
+.main-btn {
+    margin-top: 2.5rem;
+}
+
+.show-more-btn {
+    text-align: center;
+    margin: 6rem;
+}
+
+.black-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2.2rem;
+    transition: .2s ease-out;
+}
+
+.black-btn:hover {
+    background-color: var(--color-bluelife);
+    box-shadow: 5px 5px 10px 1px rgba(72, 74, 74, 0.17);
 }
 
 /* NAV STYLES */
@@ -113,6 +145,7 @@ a:hover {
     width: 100%;
     height: 100vh;
     color: var(--color-white);
+    text-align: center;
     background: linear-gradient(25deg, rgba(30, 27, 58, 0.7), rgba(0, 0, 0, 0.8), rgba(30, 27, 58, 0.7)), url(https://github.com/TheGoodPipe/05_Portfolio/blob/master/Media/Header-Img.jpg?raw=true);
     background-position: center;
     background-size: cover;
@@ -300,27 +333,8 @@ a:hover {
     font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 2px;
-    /* margin: 0 0 0.4rem 0; */
+    text-align: center;
     padding: 0.6rem;
-}
-
-.show-more-btn {
-    margin: 6rem;
-}
-
-.black-btn {
-    background-color: #000;
-    color: #fff;
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1rem 2.2rem;
-    transition: .2s ease-out;
-}
-
-.black-btn:hover {
-    background-color: var(--color-bluelife);
-    box-shadow: 5px 5px 10px 1px rgba(72, 74, 74, 0.17);
 }
 
 /* CONTACT INFORMATION */
@@ -539,10 +553,13 @@ footer {
 
 #copyright {
     font-size: 0.7em;
+    text-align: center;
     padding-bottom: 1rem;
 }
 
 .attribution {
+    font-size: .9rem;
+    text-align: center;
     padding: 1rem;
 }
 
