@@ -432,12 +432,17 @@ a:hover {
 }
 
 .project-description {
-    /* color: var(--color-black); */
+    color: var(--color-black);
+    text-align: center;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 2px;
     padding: 0.6rem;
+}
+
+.btn-margin {
+    margin-top: 5rem;
 }
 
 /* CONTACT INFORMATION */
@@ -648,6 +653,7 @@ footer {
 }
 
 .attribution p {
+    text-align: center;
     line-height: 1.2em;
     margin: 0;
 }
