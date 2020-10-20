@@ -90,6 +90,11 @@ a:hover {
     box-shadow: 5px 5px 10px 1px rgba(72, 74, 74, 0.17);
 }
 
+.show-more-btn {
+    margin: 2rem auto;
+    text-align: center;
+}
+
 /* NAV STYLES */
 
 #navbar {
