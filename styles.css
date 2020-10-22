@@ -10,7 +10,7 @@
     --color-coolblue: #0f99f5;
     --color-lightblue: #1fbcff;
     --color-aqua: #50e5ed;
-    --color-darkgray: rgb(74, 74, 74);
+    --color-darkgray: rgb(178, 181, 207);
     --color-lightgray: rgb(235, 236, 244);
     --color-white: rgb(255, 255, 255);
     --color-black: rgb(2, 2, 2);
@@ -682,46 +682,78 @@ footer {
     
     /* GENERAL */
     h2 {
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: auto 1rem;
+        color: var(--color-darkgray);
     }
 
+    h2::after {
+        content: '';
+        width: 2.4rem;
+        height: .4rem;
+        background-color: var(--color-darkgray);
+    }
+  
+    .main-btn {
+        margin: 3rem auto 0 auto;
+    }
+  
+    .logo-big {
+        font-size: 2.7em;
+        line-height: .9em;
+    }
+  
+    .logo-sub {
+        font-size: .9em;
+    }
+    
     /* NAVBAR */
     #navbar {
         flex-direction: column;
     }
 
     .navdark {
-        min-height: 11em;
-    }
-
-    #nav-left {
-        margin: auto;
-        padding: 1rem;
+        min-height: 6em;
     }
 
     #nav-right {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         margin: auto;
-        padding-bottom: 0.8rem;
+    }
+  
+    #nav-left {
+        margin: auto;
+        padding: .8rem;
     }
 
     .nav-link {
-        margin: 0;
+        margin: 0 7px;
     }
 
-    /* WELCOME - ABOUT */
-    #welcome-section {
-        height: 100vh;
+    /* ABOUT INFORMATION */
+    .about-description {
+        align-items: center;
     }
-
-    /* TRIANGLE */
-    .triangle-wrapper {
-        top: 30%;
+  
+    .about-description h2::after {
+        margin: .5rem auto;
     }
-
+  
+    .about-description h3 {
+        align-self: flex-start;
+    }
+  
+    #skills-section {
+        flex-flow: column wrap;
+        width: 80%;
+    }
+    
+    .skills-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+  
     /* VIDEO REEL */
     #video-reel::before {
         content: '';
@@ -731,14 +763,18 @@ footer {
         visibility: hidden;
     }
 
-    /* WEBSITE PROJECTS */
-    .projects-title {
-        margin: 1rem auto;
+    .video-title {
+        padding-bottom: 0;
     }
 
+    /* WEBSITE PROJECTS */
+    .projects-title {
+        margin: 6rem auto 1rem auto;
+    }
+  
     .project-tile {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         max-width: 420px;
         margin-top: 0;
     }
@@ -753,20 +789,21 @@ footer {
 
     /* CONTACT INFORMATION */
     #contact {
-        height: 40vh;
+        height: auto;
+      margin-top: 5rem;
     }
 
     .social-link-wrapper {
         width: 100%;
         height: 50px;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     .social-link {
         position: relative;
         width: 30px;
         height: 30px;
-        margin: 0 10px;
+        margin: 0 10px 10px 10px;
         transition: .3s ease-out;
     }
 
