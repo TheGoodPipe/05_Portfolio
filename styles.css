@@ -652,11 +652,20 @@ footer {
         height: .4rem;
         background-color: var(--color-darkgray);
     }
-  
+    
+    p {
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+
     .main-btn {
         margin: 3rem auto 0 auto;
     }
   
+    .black-btn {
+        font-size: 12px;
+    }
+
     .logo-big {
         font-size: 2.7em;
         line-height: .9em;
@@ -671,36 +680,52 @@ footer {
         flex-direction: column;
     }
 
-    .navdark {
-        min-height: 6em;
-    }
-
     #nav-right {
         margin: auto;
     }
-  
-    #nav-left {
-        margin: auto;
-        padding: .8rem;
+
+    #nav-right a {
+        font-size: .7em;
+    }
+
+    .logo-small {
+        display: none;
     }
 
     .nav-link {
-        margin: 0 7px;
+        margin: auto .5rem;
     }
 
     /* ABOUT INFORMATION */
-    .about-description {
+
+    #about-section {
+        padding: 1rem 0 1rem 0;
+    }
+
+    .about-description, .project-description {
         align-items: center;
     }
   
     .about-description h2::after {
         margin: .5rem auto;
     }
+
+    .project-description h2::after {
+        margin: .5rem auto;
+    }
   
     .about-description h3 {
         align-self: flex-start;
+        font-size: 19px;
+    }
+
+    .project-description h3 {
+        align-self: flex-start;
+        font-size: 19px;
     }
   
+    /* SKILLS */
+
     #skills-section {
         flex-flow: column wrap;
         width: 80%;
@@ -709,6 +734,15 @@ footer {
     .skills-wrapper {
         width: 100%;
         padding: 0;
+    }
+
+    .skills-wrapper h5 {
+        margin-top: .8rem;
+        margin-bottom: .1rem;
+    }
+
+    .skill-percentage {
+        height: 6px;
     }
   
     /* VIDEO REEL */
@@ -724,36 +758,37 @@ footer {
         padding-bottom: 0;
     }
 
+    .video-reel-wrapper {
+        padding-top: 1rem;
+    }
+
     /* WEBSITE PROJECTS */
-    .projects-title {
-        margin: 6rem auto 1rem auto;
-    }
-  
-    .project-tile {
-        flex-direction: column;
-        width: 90%;
-        max-width: 420px;
-        margin-top: 0;
+
+    #single-project {
+        padding: 4rem 0 0 0;
     }
 
-    .project-link {
-        margin: 0.8rem auto;
+    .project-picture-wrapper {
+        padding: 1rem;
+        margin: 0;
     }
 
-    .project-link:hover {
-        transform: translate(0px, 0px);
+    .project-description {
+        width: 80%;
+        padding: 0;
     }
 
     /* CONTACT INFORMATION */
     #contact {
         height: auto;
-      margin-top: 5rem;
+        min-height: auto;
+        margin-top: 6rem;
     }
 
     .social-link-wrapper {
         width: 100%;
         height: 50px;
-        margin-bottom: 4rem;
+        margin-bottom: 1.5rem;
     }
 
     .social-link {
@@ -765,7 +800,7 @@ footer {
     }
 
     /* FOOTER */
-    #footer-links-wrapper {
-        padding: 0px 10%;
+    .attribution p {
+        font-size: 10px;
     }
 }
