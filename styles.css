@@ -60,7 +60,7 @@ p {
 }
 
 a {
-    color: var(--color-bluelife);
+    color: var(--color-coolblue);
     text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .black-btn:hover {
-    background-color: var(--color-bluelife);
+    background-color: var(--color-coolblue);
     box-shadow: 5px 5px 10px 1px rgba(72, 74, 74, 0.17);
 }
 
@@ -151,7 +151,7 @@ a:hover {
 
 #nav-right a:hover {
     font-weight: 600;
-    color: var(--color-bluelife);
+    color: var(--color-coolblue);
 }
 
 /* ABOUT INFORMATION */
@@ -325,35 +325,35 @@ a:hover {
 /* SKILSS */
 
 .skill1 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 45%, var(--color-lightgray) 47%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 45%, var(--color-lightgray) 47%);
 }
 
 .skill2 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 65%, var(--color-lightgray) 67%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 65%, var(--color-lightgray) 67%);
 }
 
 .skill3 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 75%, var(--color-lightgray) 77%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 75%, var(--color-lightgray) 77%);
 }
 
 .skill4 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 70%, var(--color-lightgray) 72%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 70%, var(--color-lightgray) 72%);
 }
 
 .skill5 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 50%, var(--color-lightgray) 52%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 50%, var(--color-lightgray) 52%);
 }
 
 .skill6 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 70%, var(--color-lightgray) 72%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 70%, var(--color-lightgray) 72%);
 }
 
 .skill7 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 40%, var(--color-lightgray) 42%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 40%, var(--color-lightgray) 42%);
 }
 
 .skill8 {
-    background: linear-gradient(to right, var(--color-lightblue) 0%, var(--color-lightblue) 35%, var(--color-lightgray) 37%, var(--color-lightgray) 100%);
+    background: linear-gradient(to right, var(--color-coolblue) 0%, var(--color-lightblue) 35%, var(--color-lightgray) 37%);
 }
 
 /* VIDEO REEL */
