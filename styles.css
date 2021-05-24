@@ -169,7 +169,7 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: welcome 2.5s ease-in;
+    animation: welcome 2s ease-in-out;
 }
 
 @keyframes welcome {
@@ -188,6 +188,26 @@ a:hover {
     font-weight: 500;
     line-height: 1.1em;
     margin: 0 1rem;
+    animation: logo-big 1.5s ease-in-out;
+}
+
+@keyframes logo-big {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    45% {
+        transform: translateY(25px);
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .logo-sub {
@@ -195,6 +215,26 @@ a:hover {
     margin: .2rem 1rem;
     font-size: 1.15em;
     font-weight: 300;
+    animation: logo-sub 1.8s ease-in-out;
+}
+
+@keyframes logo-sub {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* TRIANGLE ANIMATION */
