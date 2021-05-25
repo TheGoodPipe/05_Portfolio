@@ -726,8 +726,8 @@ footer {
     .logo-mobile {
         display: initial;
         margin-right: 1rem;
-        height: 28px;
-        width: 28px;
+        height: 32px;
+        width: 32px;
         animation: logo-mobile 2s ease-in-out;
     }
 
